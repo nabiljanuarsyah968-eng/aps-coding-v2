@@ -30,18 +30,33 @@ The application has four tabs: Cuti (HRD), Cari Penerbangan, Pemesanan & Manajer
 Origin, destination, date, time, and ID fields are editable drop-down lists, so users can either pick a value
 from the list or type it manually.
 
+## Project Structure
+
+The code is split into multiple files, with one class per file:
+
+| File | Description |
+|---|---|
+| `APS.java` | Entry point; creates the main window and tabs |
+| `Data.java` | In-memory data, sample data, and search functions |
+| `PanelDasar.java` | Base panel with shared user interface helper methods |
+| `TabCuti.java` | Leave schedule tab |
+| `TabPenerbangan.java` | Flight search tab |
+| `TabPemesanan.java` | Booking and travel manager tab |
+| `TabMember.java` | Member profile tab |
+| `Cuti.java`, `Penerbangan.java`, `Pengguna.java`, `Pemesanan.java` | Data model classes |
+
 ## Requirements
 
 - Java JDK 17 or later
 
 ## How to Run
 
+Place all `.java` files in the same folder, then run:
+
 ```
-javac APS.java
+javac *.java
 java APS
 ```
-
-Make sure the folder contains only this `APS.java` file so that no other class definitions conflict with it.
 
 ## Sample Data
 
